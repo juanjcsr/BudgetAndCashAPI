@@ -34,6 +34,7 @@ defmodule BudgetApi.Endpoint do
     store: :cookie,
     key: "_budget_api_key",
     signing_salt: "o7bWUQgg"
+  plug CORSPlug
 
   plug BudgetApi.Router
 end
